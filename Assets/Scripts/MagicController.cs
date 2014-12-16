@@ -8,8 +8,8 @@ public class MagicController : MonoBehaviour {
 	// This object must have a ThalmicMyo script attached.
 	public GameObject myo = null;
 
-	// Point from where magic projectiles will launch from the hand
-	// This object must be a plane placed either in front of the palm or at the tip of the hand's fingers
+	// Point from where magic projectiles will launch from the hand.
+	// This object must be a plane placed either in front of the palm or at the tip of the hand's fingers.
 	public GameObject handMagicLauncher;
 
 	public GameObject fistProjectile;
@@ -28,11 +28,6 @@ public class MagicController : MonoBehaviour {
 	
 	private float projectileTimer = 0;
 
-	void Awake () {
-
-	}
-
-	// Use this for initialization
 	void Start () {
 		myoController = myo.GetComponent<ThalmicMyo> ();
 	}
